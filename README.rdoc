@@ -2,7 +2,7 @@
 
 Introduction
 
-  sudo gem install deploy_kit -source http://gemcutter.org
+  sudo gem install deploy_kit --source http://gemcutter.org
 
 or
 
