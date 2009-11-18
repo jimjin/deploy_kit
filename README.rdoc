@@ -18,7 +18,7 @@ Add gem require to config/environment.rb
 
 Add below codes to your rails's Rakefile
 
-  Dir["#{Gem.searcher.find('deploy_kit').full_gem_path}/tasks/*.rake"].each { |ext| p ext; load ext }
+  Dir["#{Gem.searcher.find('deploy_kit').full_gem_path}/tasks/*.rake"].each { |ext| load ext }
 
 
 ==Example
