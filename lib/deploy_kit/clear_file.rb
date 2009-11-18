@@ -8,7 +8,7 @@ class ClearFile < DeployKit
   end
 
   def cmd
-    "find %s -type f -mtime +%s -exec rm {} \\;"
+    "find %s -type f -ctime +%s -exec rm {} \\;"
   end
 
   def clear(path, days)

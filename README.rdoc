@@ -1,11 +1,35 @@
 ==DeployKit
 
-Introduction goes here.
+Introduction
+
+  sudo gem install deploy_kit -source http://gemcutter.org
+
+or
+
+  sudo gem install gemcutter
+  sudo gem tumble
+  sudo gem install deploy_kit
+
+
+Add gem require to config/environment.rb
+
+  config.gem "deploy_kit", :source => 'http://gemcutter.org'
+
+
+Add below codes to your rails's Rakefile
+
+  Dir["#{Gem.searcher.find('deploy_kit').full_gem_path}/tasks/*.rake"].each { |ext| p ext; load ext }
 
 
 ==Example
 
-Example goes here.
+  rake -T deploy # View deploy tasks
+
+  rake deploy:backup_log
+  rake deploy:backup_mysql
+  rake deploy:clear
+  rake deploy:setup
+
 
 ==Reference
 
