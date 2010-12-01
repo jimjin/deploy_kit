@@ -2,19 +2,11 @@
 
 Introduction
 
-  sudo gem install deploy_kit --source http://gemcutter.org
-
-or
-
-  sudo gem install gemcutter
-  sudo gem tumble
   sudo gem install deploy_kit
 
-
-Add gem require to config/environment.rb
-
-  config.gem "deploy_kit", :source => 'http://gemcutter.org'
-
+or
+  add to Gemfile
+  gem 'deploy_kit'
 
 Add below codes to your rails's Rakefile
 
